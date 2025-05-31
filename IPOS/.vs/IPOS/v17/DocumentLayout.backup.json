@@ -1,0 +1,328 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ADMIN\\Desktop\\Hk2433\\PTPMUD\\IPOS_COFFE_RESTAURANT\\IPOS\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{BE55CCA4-E38A-4EBD-AB18-A30ECE6E591D}|IPOS.csproj|c:\\users\\admin\\desktop\\hk2433\\ptpmud\\ipos_coffe_restaurant\\ipos\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE55CCA4-E38A-4EBD-AB18-A30ECE6E591D}|IPOS.csproj|solutionrelative:order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE55CCA4-E38A-4EBD-AB18-A30ECE6E591D}|IPOS.csproj|C:\\Users\\ADMIN\\Desktop\\Hk2433\\PTPMUD\\IPOS_COFFE_RESTAURANT\\IPOS\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BE55CCA4-E38A-4EBD-AB18-A30ECE6E591D}|IPOS.csproj|solutionrelative:order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE55CCA4-E38A-4EBD-AB18-A30ECE6E591D}|IPOS.csproj|C:\\Users\\ADMIN\\Desktop\\Hk2433\\PTPMUD\\IPOS_COFFE_RESTAURANT\\IPOS\\form_table.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE55CCA4-E38A-4EBD-AB18-A30ECE6E591D}|IPOS.csproj|solutionrelative:form_table.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE55CCA4-E38A-4EBD-AB18-A30ECE6E591D}|IPOS.csproj|C:\\Users\\ADMIN\\Desktop\\Hk2433\\PTPMUD\\IPOS_COFFE_RESTAURANT\\IPOS\\form_table.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BE55CCA4-E38A-4EBD-AB18-A30ECE6E591D}|IPOS.csproj|solutionrelative:form_table.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE55CCA4-E38A-4EBD-AB18-A30ECE6E591D}|IPOS.csproj|C:\\Users\\ADMIN\\Desktop\\Hk2433\\PTPMUD\\IPOS_COFFE_RESTAURANT\\IPOS\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BE55CCA4-E38A-4EBD-AB18-A30ECE6E591D}|IPOS.csproj|solutionrelative:payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE55CCA4-E38A-4EBD-AB18-A30ECE6E591D}|IPOS.csproj|C:\\Users\\ADMIN\\Desktop\\Hk2433\\PTPMUD\\IPOS_COFFE_RESTAURANT\\IPOS\\form_table.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE55CCA4-E38A-4EBD-AB18-A30ECE6E591D}|IPOS.csproj|solutionrelative:form_table.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE55CCA4-E38A-4EBD-AB18-A30ECE6E591D}|IPOS.csproj|C:\\Users\\ADMIN\\Desktop\\Hk2433\\PTPMUD\\IPOS_COFFE_RESTAURANT\\IPOS\\order.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE55CCA4-E38A-4EBD-AB18-A30ECE6E591D}|IPOS.csproj|solutionrelative:order.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE55CCA4-E38A-4EBD-AB18-A30ECE6E591D}|IPOS.csproj|C:\\Users\\ADMIN\\Desktop\\Hk2433\\PTPMUD\\IPOS_COFFE_RESTAURANT\\IPOS\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE55CCA4-E38A-4EBD-AB18-A30ECE6E591D}|IPOS.csproj|solutionrelative:payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE55CCA4-E38A-4EBD-AB18-A30ECE6E591D}|IPOS.csproj|C:\\Users\\ADMIN\\Desktop\\Hk2433\\PTPMUD\\IPOS_COFFE_RESTAURANT\\IPOS\\db_access\\productdetails_access.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE55CCA4-E38A-4EBD-AB18-A30ECE6E591D}|IPOS.csproj|solutionrelative:db_access\\productdetails_access.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE55CCA4-E38A-4EBD-AB18-A30ECE6E591D}|IPOS.csproj|C:\\Users\\ADMIN\\Desktop\\Hk2433\\PTPMUD\\IPOS_COFFE_RESTAURANT\\IPOS\\db_access\\category_access.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE55CCA4-E38A-4EBD-AB18-A30ECE6E591D}|IPOS.csproj|solutionrelative:db_access\\category_access.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE55CCA4-E38A-4EBD-AB18-A30ECE6E591D}|IPOS.csproj|C:\\Users\\ADMIN\\Desktop\\Hk2433\\PTPMUD\\IPOS_COFFE_RESTAURANT\\IPOS\\db_access\\table_details_access.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE55CCA4-E38A-4EBD-AB18-A30ECE6E591D}|IPOS.csproj|solutionrelative:db_access\\table_details_access.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE55CCA4-E38A-4EBD-AB18-A30ECE6E591D}|IPOS.csproj|C:\\Users\\ADMIN\\Desktop\\Hk2433\\PTPMUD\\IPOS_COFFE_RESTAURANT\\IPOS\\db\\productdetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE55CCA4-E38A-4EBD-AB18-A30ECE6E591D}|IPOS.csproj|solutionrelative:db\\productdetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE55CCA4-E38A-4EBD-AB18-A30ECE6E591D}|IPOS.csproj|C:\\Users\\ADMIN\\Desktop\\Hk2433\\PTPMUD\\IPOS_COFFE_RESTAURANT\\IPOS\\db\\table_details.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE55CCA4-E38A-4EBD-AB18-A30ECE6E591D}|IPOS.csproj|solutionrelative:db\\table_details.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE55CCA4-E38A-4EBD-AB18-A30ECE6E591D}|IPOS.csproj|C:\\Users\\ADMIN\\Desktop\\Hk2433\\PTPMUD\\IPOS_COFFE_RESTAURANT\\IPOS\\db\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE55CCA4-E38A-4EBD-AB18-A30ECE6E591D}|IPOS.csproj|solutionrelative:db\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE55CCA4-E38A-4EBD-AB18-A30ECE6E591D}|IPOS.csproj|C:\\Users\\ADMIN\\Desktop\\Hk2433\\PTPMUD\\IPOS_COFFE_RESTAURANT\\IPOS\\payment.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE55CCA4-E38A-4EBD-AB18-A30ECE6E591D}|IPOS.csproj|solutionrelative:payment.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE55CCA4-E38A-4EBD-AB18-A30ECE6E591D}|IPOS.csproj|C:\\Users\\ADMIN\\Desktop\\Hk2433\\PTPMUD\\IPOS_COFFE_RESTAURANT\\IPOS\\form_signin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BE55CCA4-E38A-4EBD-AB18-A30ECE6E591D}|IPOS.csproj|solutionrelative:form_signin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE55CCA4-E38A-4EBD-AB18-A30ECE6E591D}|IPOS.csproj|C:\\Users\\ADMIN\\Desktop\\Hk2433\\PTPMUD\\IPOS_COFFE_RESTAURANT\\IPOS\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE55CCA4-E38A-4EBD-AB18-A30ECE6E591D}|IPOS.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE55CCA4-E38A-4EBD-AB18-A30ECE6E591D}|IPOS.csproj|C:\\Users\\ADMIN\\Desktop\\Hk2433\\PTPMUD\\IPOS_COFFE_RESTAURANT\\IPOS\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{BE55CCA4-E38A-4EBD-AB18-A30ECE6E591D}|IPOS.csproj|solutionrelative:app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ADMIN\\Desktop\\Hk2433\\PTPMUD\\EnglishTest\\EnglishTest\\QuanLyCauHoi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 211,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ProductDetails_Access.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Hk2433\\PTPMUD\\IPOS_COFFE_RESTAURANT\\IPOS\\DB_Access\\ProductDetails_Access.cs",
+              "RelativeDocumentMoniker": "DB_Access\\ProductDetails_Access.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Hk2433\\PTPMUD\\IPOS_COFFE_RESTAURANT\\IPOS\\DB_Access\\ProductDetails_Access.cs",
+              "RelativeToolTip": "DB_Access\\ProductDetails_Access.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-30T13:15:23.868Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Category_Access.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Hk2433\\PTPMUD\\IPOS_COFFE_RESTAURANT\\IPOS\\DB_Access\\Category_Access.cs",
+              "RelativeDocumentMoniker": "DB_Access\\Category_Access.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Hk2433\\PTPMUD\\IPOS_COFFE_RESTAURANT\\IPOS\\DB_Access\\Category_Access.cs",
+              "RelativeToolTip": "DB_Access\\Category_Access.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-30T12:39:18.22Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Category.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Hk2433\\PTPMUD\\IPOS_COFFE_RESTAURANT\\IPOS\\DB\\Category.cs",
+              "RelativeDocumentMoniker": "DB\\Category.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Hk2433\\PTPMUD\\IPOS_COFFE_RESTAURANT\\IPOS\\DB\\Category.cs",
+              "RelativeToolTip": "DB\\Category.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-30T12:36:17.689Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Order.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Hk2433\\PTPMUD\\IPOS_COFFE_RESTAURANT\\IPOS\\Order.Designer.cs",
+              "RelativeDocumentMoniker": "Order.Designer.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Hk2433\\PTPMUD\\IPOS_COFFE_RESTAURANT\\IPOS\\Order.Designer.cs",
+              "RelativeToolTip": "Order.Designer.cs",
+              "ViewState": "AgIAAF8AAAAAAAAAAAAawHgAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-30T09:18:41.617Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Order.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Hk2433\\PTPMUD\\IPOS_COFFE_RESTAURANT\\IPOS\\Order.cs",
+              "RelativeDocumentMoniker": "Order.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Hk2433\\PTPMUD\\IPOS_COFFE_RESTAURANT\\IPOS\\Order.cs",
+              "RelativeToolTip": "Order.cs",
+              "ViewState": "AgIAAEEAAAAAAAAAAAAcwFQAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-29T13:16:01.925Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ProductDetails.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Hk2433\\PTPMUD\\IPOS_COFFE_RESTAURANT\\IPOS\\DB\\ProductDetails.cs",
+              "RelativeDocumentMoniker": "DB\\ProductDetails.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Hk2433\\PTPMUD\\IPOS_COFFE_RESTAURANT\\IPOS\\DB\\ProductDetails.cs",
+              "RelativeToolTip": "DB\\ProductDetails.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-30T09:01:56.549Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Table_Details_Access.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Hk2433\\PTPMUD\\IPOS_COFFE_RESTAURANT\\IPOS\\DB_Access\\Table_Details_Access.cs",
+              "RelativeDocumentMoniker": "DB_Access\\Table_Details_Access.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Hk2433\\PTPMUD\\IPOS_COFFE_RESTAURANT\\IPOS\\DB_Access\\Table_Details_Access.cs",
+              "RelativeToolTip": "DB_Access\\Table_Details_Access.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-30T07:17:22.861Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "QuanLyCauHoi.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Hk2433\\PTPMUD\\EnglishTest\\EnglishTest\\QuanLyCauHoi.cs",
+              "RelativeDocumentMoniker": "..\\..\\EnglishTest\\EnglishTest\\QuanLyCauHoi.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Hk2433\\PTPMUD\\EnglishTest\\EnglishTest\\QuanLyCauHoi.cs",
+              "RelativeToolTip": "..\\..\\EnglishTest\\EnglishTest\\QuanLyCauHoi.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-30T07:13:29.246Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "App.config",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Hk2433\\PTPMUD\\IPOS_COFFE_RESTAURANT\\IPOS\\App.config",
+              "RelativeDocumentMoniker": "App.config",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Hk2433\\PTPMUD\\IPOS_COFFE_RESTAURANT\\IPOS\\App.config",
+              "RelativeToolTip": "App.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-05-30T07:09:21.467Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Table_Details.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Hk2433\\PTPMUD\\IPOS_COFFE_RESTAURANT\\IPOS\\DB\\Table_Details.cs",
+              "RelativeDocumentMoniker": "DB\\Table_Details.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Hk2433\\PTPMUD\\IPOS_COFFE_RESTAURANT\\IPOS\\DB\\Table_Details.cs",
+              "RelativeToolTip": "DB\\Table_Details.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA0AAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-30T07:02:51.408Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Payment.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Hk2433\\PTPMUD\\IPOS_COFFE_RESTAURANT\\IPOS\\Payment.Designer.cs",
+              "RelativeDocumentMoniker": "Payment.Designer.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Hk2433\\PTPMUD\\IPOS_COFFE_RESTAURANT\\IPOS\\Payment.Designer.cs",
+              "RelativeToolTip": "Payment.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-29T13:19:43.547Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Payment.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Hk2433\\PTPMUD\\IPOS_COFFE_RESTAURANT\\IPOS\\Payment.cs",
+              "RelativeDocumentMoniker": "Payment.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Hk2433\\PTPMUD\\IPOS_COFFE_RESTAURANT\\IPOS\\Payment.cs",
+              "RelativeToolTip": "Payment.cs",
+              "ViewState": "AgIAADMAAAAAAAAAAAAowIMAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-29T13:19:36.253Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Payment.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Hk2433\\PTPMUD\\IPOS_COFFE_RESTAURANT\\IPOS\\Payment.cs",
+              "RelativeDocumentMoniker": "Payment.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Hk2433\\PTPMUD\\IPOS_COFFE_RESTAURANT\\IPOS\\Payment.cs [Design]",
+              "RelativeToolTip": "Payment.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-29T13:16:50.035Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Order.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Hk2433\\PTPMUD\\IPOS_COFFE_RESTAURANT\\IPOS\\Order.cs",
+              "RelativeDocumentMoniker": "Order.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Hk2433\\PTPMUD\\IPOS_COFFE_RESTAURANT\\IPOS\\Order.cs [Design]",
+              "RelativeToolTip": "Order.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-29T08:29:17.358Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form_Table.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Hk2433\\PTPMUD\\IPOS_COFFE_RESTAURANT\\IPOS\\Form_Table.Designer.cs",
+              "RelativeDocumentMoniker": "Form_Table.Designer.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Hk2433\\PTPMUD\\IPOS_COFFE_RESTAURANT\\IPOS\\Form_Table.Designer.cs",
+              "RelativeToolTip": "Form_Table.Designer.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAYwF8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-29T08:11:56.404Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Hk2433\\PTPMUD\\IPOS_COFFE_RESTAURANT\\IPOS\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Hk2433\\PTPMUD\\IPOS_COFFE_RESTAURANT\\IPOS\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-29T07:33:01.685Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Form_Table.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Hk2433\\PTPMUD\\IPOS_COFFE_RESTAURANT\\IPOS\\Form_Table.cs",
+              "RelativeDocumentMoniker": "Form_Table.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Hk2433\\PTPMUD\\IPOS_COFFE_RESTAURANT\\IPOS\\Form_Table.cs",
+              "RelativeToolTip": "Form_Table.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAYwBoAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-29T07:32:39.689Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Form_Table.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Hk2433\\PTPMUD\\IPOS_COFFE_RESTAURANT\\IPOS\\Form_Table.cs",
+              "RelativeDocumentMoniker": "Form_Table.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Hk2433\\PTPMUD\\IPOS_COFFE_RESTAURANT\\IPOS\\Form_Table.cs [Design]",
+              "RelativeToolTip": "Form_Table.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-29T07:25:03.136Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Form_SignIn.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Hk2433\\PTPMUD\\IPOS_COFFE_RESTAURANT\\IPOS\\Form_SignIn.cs",
+              "RelativeDocumentMoniker": "Form_SignIn.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Hk2433\\PTPMUD\\IPOS_COFFE_RESTAURANT\\IPOS\\Form_SignIn.cs [Design]",
+              "RelativeToolTip": "Form_SignIn.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-29T07:11:40.518Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
