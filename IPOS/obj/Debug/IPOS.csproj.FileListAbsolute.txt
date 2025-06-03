@@ -2,7 +2,6 @@ F:\s\IPOS_VN\IPOS\bin\Debug\IPOS.exe.config
 F:\s\IPOS_VN\IPOS\bin\Debug\IPOS.exe
 F:\s\IPOS_VN\IPOS\bin\Debug\IPOS.pdb
 F:\s\IPOS_VN\IPOS\obj\Debug\IPOS.csproj.AssemblyReference.cache
-F:\s\IPOS_VN\IPOS\obj\Debug\IPOS.Form_SignIn.resources
 F:\s\IPOS_VN\IPOS\obj\Debug\IPOS.Form_Table.resources
 F:\s\IPOS_VN\IPOS\obj\Debug\IPOS.Order.resources
 F:\s\IPOS_VN\IPOS\obj\Debug\IPOS.Payment.resources
@@ -11,3 +10,5 @@ F:\s\IPOS_VN\IPOS\obj\Debug\IPOS.csproj.GenerateResource.cache
 F:\s\IPOS_VN\IPOS\obj\Debug\IPOS.csproj.CoreCompileInputs.cache
 F:\s\IPOS_VN\IPOS\obj\Debug\IPOS.exe
 F:\s\IPOS_VN\IPOS\obj\Debug\IPOS.pdb
+F:\s\IPOS_VN\IPOS\obj\Debug\IPOS.Shift_Manager.resources
+F:\s\IPOS_VN\IPOS\obj\Debug\IPOS.Session.resources

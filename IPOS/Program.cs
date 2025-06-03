@@ -16,7 +16,7 @@ namespace IPOS
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form_Table());
+            Application.Run(new Form_SignIn());
         }
     }
 }

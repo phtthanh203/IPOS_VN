@@ -2,6 +2,7 @@
 using IPOS.DB_Access;
 using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Windows.Forms;
@@ -10,72 +11,87 @@ namespace IPOS
 {
     public partial class Order : Form
     {
-        public Order()
+        private List<ProductDetails> cart = new List<ProductDetails>();
+        private ProductDetails selectedProduct = null;
+        private FlowLayoutPanel cartPanel;
+        private int? selectedTableId;
+        private Button buttonLeave;
+
+        public Order(int tableId)
         {
             InitializeComponent();
+            selectedTableId = tableId;
             this.Load += Order_Load;
+            button13.Click += buttonAddToCart_Click;
+            button15.Click += buttonThanhToan_Click;
         }
 
         private void Order_Load(object sender, EventArgs e)
         {
             label2.Text = DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss");
-
             SetupSearchBoxEvents();
             LoadCategoryButtonsFromButton2();
             LoadProductFromButton1();
+
+            cartPanel = new FlowLayoutPanel
+            {
+                Width = 324,
+                Height = 250,
+                AutoScroll = true,
+                BackColor = Color.White,
+                BorderStyle = BorderStyle.FixedSingle,
+                Margin = new Padding(0, 10, 0, 10)
+            };
+            flowLayoutPanel3.Controls.Add(cartPanel);
+
+            button15.Text = "💰 Thanh toán (0 đ)";
+
+            buttonLeave = new Button
+            {
+                Text = "❌ Rời đi",
+                Size = new Size(324, 50),
+                Font = new Font("Segoe UI", 14F, FontStyle.Bold),
+                BackColor = Color.LightGray,
+                ForeColor = Color.Black,
+                FlatStyle = FlatStyle.Flat
+            };
+            buttonLeave.Click += ButtonLeave_Click;
+            flowLayoutPanel3.Controls.Add(buttonLeave);
+        }
+
+        private void ButtonLeave_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Bạn có chắc muốn rời đi?", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                this.Hide();
+                new Form_Table().Show();
+            }
         }
 
         private void SetupSearchBoxEvents()
         {
-            txtSearch.Text = "Tìm kiếm sản phẩm...";
-            txtSearch.ForeColor = Color.Gray;
-
-            txtSearch.Enter += (sender, e) =>
-            {
-                if (txtSearch.Text == "Tìm kiếm sản phẩm...")
-                {
-                    txtSearch.Text = "";
-                    txtSearch.ForeColor = Color.Black;
-                }
-            };
-
-            txtSearch.Leave += (sender, e) =>
-            {
-                if (string.IsNullOrWhiteSpace(txtSearch.Text))
-                {
-                    txtSearch.Text = "Tìm kiếm sản phẩm...";
-                    txtSearch.ForeColor = Color.Gray;
-                }
-            };
-
-            txtSearch.TextChanged += (sender, e) =>
+            txtSearch.TextChanged += (s, ev) =>
             {
                 if (txtSearch.Text == "Tìm kiếm sản phẩm...") return;
-
-                string searchTerm = txtSearch.Text.ToLower();
-                List<ProductDetails> filteredProducts = GetFilteredProducts(searchTerm);
-                UpdateProductList(filteredProducts);
+                UpdateProductList(GetFilteredProducts(txtSearch.Text.ToLower()));
             };
         }
 
         private void LoadCategoryButtonsFromButton2()
         {
-            Category_Access cate = new Category_Access();
-            List<Category> danhsachmuc = cate.GetAllTables();
+            var cateAccess = new Category_Access();
+            var categories = cateAccess.GetAllTables();
 
-            var itemsToRemove = flowLayoutPanel2.Controls
+            var toRemove = flowLayoutPanel2.Controls
                 .OfType<Control>()
                 .Where(c => c is Button && c != button2)
                 .ToList();
 
-            foreach (var ctrl in itemsToRemove)
+            foreach (var ctrl in toRemove)
                 flowLayoutPanel2.Controls.Remove(ctrl);
 
-            foreach (var muc in danhsachmuc)
-            {
-                Button btn = CreateCategoryButton(muc);
-                flowLayoutPanel2.Controls.Add(btn);
-            }
+            foreach (var cat in categories)
+                flowLayoutPanel2.Controls.Add(CreateCategoryButton(cat));
 
             flowLayoutPanel2.Controls.SetChildIndex(txtSearch, 0);
             button2.Visible = false;
@@ -83,7 +99,7 @@ namespace IPOS
 
         private Button CreateCategoryButton(Category category)
         {
-            Button btn = new Button
+            var btn = new Button
             {
                 Size = button2.Size,
                 Font = button2.Font,
@@ -99,37 +115,35 @@ namespace IPOS
 
         private void LoadProductFromButton1()
         {
-            ProductDetails_Access pro = new ProductDetails_Access();
-            List<ProductDetails> sanpham = pro.getAllTables();
+            var proAccess = new ProductDetails_Access();
+            var products = proAccess.getAllTables();
 
             flowLayoutPanel1.Controls.Clear();
-
-            foreach (var s in sanpham)
-            {
-                Button btn = CreateProductButton(s);
-                flowLayoutPanel1.Controls.Add(btn);
-            }
+            foreach (var product in products)
+                flowLayoutPanel1.Controls.Add(CreateProductButton(product));
         }
 
         private Button CreateProductButton(ProductDetails product)
         {
-            Button btn = new Button
+            var btn = new Button
             {
                 Size = new Size(150, 130),
                 Font = new Font("Segoe UI", 10F),
                 Margin = new Padding(10),
                 TextAlign = ContentAlignment.MiddleCenter,
                 ForeColor = Color.DarkSlateGray,
-                Text = $"{product.ProductName}\n{product.Price}",
+                Text = $"{product.ProductName}\n{product.Price:N0} đ",
                 Tag = product
             };
 
             if (System.IO.File.Exists(product.ImagePath))
             {
-                Image originalImage = Image.FromFile(product.ImagePath);
-                btn.Image = new Bitmap(originalImage, new Size(100, 60));
-                btn.ImageAlign = ContentAlignment.TopCenter;
-                btn.TextImageRelation = TextImageRelation.ImageAboveText;
+                using (var original = Image.FromFile(product.ImagePath))
+                {
+                    btn.Image = new Bitmap(original, new Size(100, 60));
+                    btn.ImageAlign = ContentAlignment.TopCenter;
+                    btn.TextImageRelation = TextImageRelation.ImageAboveText;
+                }
             }
 
             btn.Click += Btn_ClickSanPham;
@@ -138,28 +152,23 @@ namespace IPOS
 
         private void Btn_ClickDanhMuc(object sender, EventArgs e)
         {
-            Button btn = sender as Button;
-            if (btn != null && btn.Tag is Category selectedCategory)
+            if (sender is Button btn && btn.Tag is Category category)
             {
-                ProductDetails_Access pro = new ProductDetails_Access();
-                List<ProductDetails> products = pro.getAllTables()
-                    .Where(p => p.CategoryId == selectedCategory.CategoryId).ToList();
+                var proAccess = new ProductDetails_Access();
+                var products = proAccess.getAllTables()
+                    .Where(p => p.CategoryId == category.CategoryId)
+                    .ToList();
 
-                flowLayoutPanel1.Controls.Clear();
-                foreach (var s in products)
-                {
-                    Button btnProduct = CreateProductButton(s);
-                    flowLayoutPanel1.Controls.Add(btnProduct);
-                }
+                UpdateProductList(products);
             }
         }
 
         private void Btn_ClickSanPham(object sender, EventArgs e)
         {
-            Button btn = sender as Button;
-            if (btn != null && btn.Tag is ProductDetails product)
+            if (sender is Button btn && btn.Tag is ProductDetails product)
             {
-                label3.Text = $"Product: {product.ProductName}\nPrice: {product.Price}";
+                selectedProduct = product;
+                label3.Text = $"Sản phẩm: {product.ProductName}\nGiá: {product.Price:N0} đ";
 
                 if (System.IO.File.Exists(product.ImagePath))
                 {
@@ -171,32 +180,134 @@ namespace IPOS
                     pictureBox1.Image = null;
                 }
 
-                labelImageDescription.Text = $"Image: {product.ImagePath}";
             }
         }
 
-        private List<ProductDetails> GetFilteredProducts(string searchTerm)
+        private void buttonAddToCart_Click(object sender, EventArgs e)
         {
-            ProductDetails_Access pro = new ProductDetails_Access();
-            List<ProductDetails> allProducts = pro.getAllTables();
+            if (selectedProduct == null)
+            {
+                MessageBox.Show("Hãy chọn một món trước khi thêm vào giỏ!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
 
-            return allProducts.Where(p => p.ProductName.ToLower().Contains(searchTerm)).ToList();
+            cart.Add(selectedProduct);
+            UpdateCartUI();
+            MessageBox.Show($"Đã thêm {selectedProduct.ProductName} vào giỏ hàng!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
-        private void UpdateProductList(List<ProductDetails> filteredProducts)
+        private void buttonThanhToan_Click(object sender, EventArgs e)
+        {
+            if (cart.Count == 0)
+            {
+                MessageBox.Show("Chưa có sản phẩm nào trong giỏ hàng!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            int tongTien = cart.Sum(p => p.Price);
+            string maDon = "ORD" + DateTime.Now.Ticks;
+
+            using (var conn = new SqlConnection(System.Configuration.ConfigurationManager.ConnectionStrings["MyConnection"].ConnectionString))
+            {
+                conn.Open();
+
+                var insertOrder = new SqlCommand(@"
+                    INSERT INTO Orders (OrderCode, TotalAmount, Status, OrderTime, IsTakeAway, TableId)
+                    OUTPUT INSERTED.OrderId
+                    VALUES (@code, @total, 'New', GETDATE(), 0, @tableId)", conn);
+
+                insertOrder.Parameters.AddWithValue("@code", maDon);
+                insertOrder.Parameters.AddWithValue("@total", tongTien);
+                insertOrder.Parameters.AddWithValue("@tableId", selectedTableId.HasValue ? (object)selectedTableId.Value : DBNull.Value);
+
+                int orderId = (int)insertOrder.ExecuteScalar();
+
+                foreach (var item in cart)
+                {
+                    var insertDetail = new SqlCommand(@"
+                        INSERT INTO OrderDetails (OrderId, ProductId, Quantity, UnitPrice)
+                        VALUES (@orderId, @productId, 1, @unitPrice)", conn);
+
+                    insertDetail.Parameters.AddWithValue("@orderId", orderId);
+                    insertDetail.Parameters.AddWithValue("@productId", item.ProductId);
+                    insertDetail.Parameters.AddWithValue("@unitPrice", item.Price);
+                    insertDetail.ExecuteNonQuery();
+                }
+
+                MessageBox.Show("Thanh toán thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                cart.Clear();
+                UpdateCartUI();
+                this.Hide();
+                new Form_Table().Show();
+            }
+        }
+
+        private void UpdateCartUI()
+        {
+            cartPanel.Controls.Clear();
+
+            for (int i = 0; i < cart.Count; i++)
+            {
+                var item = cart[i];
+
+                var itemPanel = new Panel
+                {
+                    Width = cartPanel.Width - 20,
+                    Height = 40,
+                    Margin = new Padding(5),
+                    BackColor = Color.FromArgb(245, 245, 245)
+                };
+
+                var label = new Label
+                {
+                    Text = $"- {item.ProductName} ({item.Price:N0} đ)",
+                    AutoSize = false,
+                    Width = itemPanel.Width - 40,
+                    Height = 40,
+                    Font = new Font("Segoe UI", 11F),
+                    TextAlign = ContentAlignment.MiddleLeft,
+                    Padding = new Padding(5)
+                };
+
+                var removeBtn = new Button
+                {
+                    Text = "❌",
+                    Width = 30,
+                    Height = 30,
+                    BackColor = Color.Red,
+                    ForeColor = Color.White,
+                    FlatStyle = FlatStyle.Flat,
+                    Location = new Point(itemPanel.Width - 35, 5),
+                    Tag = i
+                };
+                removeBtn.Click += (s, e) =>
+                {
+                    cart.RemoveAt((int)((Button)s).Tag);
+                    UpdateCartUI();
+                };
+
+                itemPanel.Controls.Add(label);
+                itemPanel.Controls.Add(removeBtn);
+                cartPanel.Controls.Add(itemPanel);
+            }
+
+            int tongTien = cart.Sum(p => p.Price);
+            button15.Text = $"💰 Thanh toán ({tongTien:N0} đ)";
+        }
+
+        private List<ProductDetails> GetFilteredProducts(string keyword)
+        {
+            var proAccess = new ProductDetails_Access();
+            return proAccess.getAllTables()
+                .Where(p => p.ProductName.ToLower().Contains(keyword))
+                .ToList();
+        }
+
+        private void UpdateProductList(List<ProductDetails> products)
         {
             flowLayoutPanel1.Controls.Clear();
-            foreach (var product in filteredProducts)
-            {
-                Button btn = CreateProductButton(product);
-                flowLayoutPanel1.Controls.Add(btn);
-            }
-        }
-
-        private void button15_Click_1(object sender, EventArgs e)
-        {
-            Payment pay = new Payment();
-            pay.Show();
+            foreach (var product in products)
+                flowLayoutPanel1.Controls.Add(CreateProductButton(product));
         }
     }
 }
